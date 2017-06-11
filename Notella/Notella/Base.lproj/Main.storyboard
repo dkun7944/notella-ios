@@ -121,7 +121,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RD0-e3-tPQ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RD0-e3-tPQ" customClass="PulsatingView" customModule="Notella" customModuleProvider="target">
                                 <rect key="frame" x="182" y="328" width="10" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -136,6 +136,9 @@
                                     <constraint firstAttribute="width" constant="69" id="hl8-nR-vIa"/>
                                 </constraints>
                                 <state key="normal" title="Start/stop"/>
+                                <connections>
+                                    <action selector="startStopPressed:" destination="F4V-0R-5qS" eventType="touchUpInside" id="ODd-l2-bSx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,6 +150,9 @@
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="pulsatingView" destination="RD0-e3-tPQ" id="DYC-JK-w6L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u52-re-0e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

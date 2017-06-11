@@ -12,15 +12,43 @@ class GameViewController: StyledViewController {
 
     // MARK: - Outlets
     
-    
+    @IBOutlet var pulsatingView: PulsatingView!
     
     // MARK: - Properties
+    
+    var metronome: Metronome!
     
     // MARK: - Setup
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setup()
     }
 
+    func setup() {
+        metronome = Metronome.init()
+        metronome.delegate = self
+        metronome.tempo = 120
+    }
+    
+    // MARK: - TempoDelegate Methods
+    
+    func pulseDownbeat() {
+        DispatchQueue.main.async {
+            self.pulsatingView.pulse()
+        }
+    }
+    
+    func pulseUpbeat() {
+        DispatchQueue.main.async {
+            self.pulsatingView.pulse()
+        }
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func startStopPressed(_ sender: Any) {
+        metronome.on ? metronome.stopTapping() : metronome.startTapping()
+    }
+    
 }
