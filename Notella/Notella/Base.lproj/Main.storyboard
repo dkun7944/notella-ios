@@ -35,13 +35,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCY-qB-KKS">
                                 <rect key="frame" x="146.5" y="208" width="83.5" height="116"/>
                                 <fontDescription key="fontDescription" name="TypoRoundLightDemo" family="Typo Round Light Demo" pointSize="100"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="measures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFA-ST-lck">
                                 <rect key="frame" x="123" y="324" width="130.5" height="36"/>
                                 <fontDescription key="fontDescription" name="TypoRoundRegularDemo" family="Typo Round Regular Demo" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFf-BY-nc4">
@@ -120,13 +120,37 @@
                     <view key="view" contentMode="scaleToFill" id="lFZ-9h-leb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RD0-e3-tPQ">
+                                <rect key="frame" x="182" y="328" width="10" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="dVs-ae-ECa"/>
+                                    <constraint firstAttribute="width" constant="10" id="hhR-4w-Ux5"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1M-FJ-bhB">
+                                <rect key="frame" x="153" y="569" width="69" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Um-Ps-zeb"/>
+                                    <constraint firstAttribute="width" constant="69" id="hl8-nR-vIa"/>
+                                </constraints>
+                                <state key="normal" title="Start/stop"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VNQ-Ho-PVD" firstAttribute="top" secondItem="F1M-FJ-bhB" secondAttribute="bottom" constant="68" id="BTo-42-1Ml"/>
+                            <constraint firstItem="F1M-FJ-bhB" firstAttribute="centerX" secondItem="lFZ-9h-leb" secondAttribute="centerX" id="OLL-mP-EVG"/>
+                            <constraint firstItem="RD0-e3-tPQ" firstAttribute="centerX" secondItem="lFZ-9h-leb" secondAttribute="centerX" id="gfz-1Y-ySx"/>
+                            <constraint firstItem="RD0-e3-tPQ" firstAttribute="centerY" secondItem="lFZ-9h-leb" secondAttribute="centerY" id="uy2-7L-Pl5"/>
+                        </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u52-re-0e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1014" y="97"/>
+            <point key="canvasLocation" x="991" y="38"/>
         </scene>
     </scenes>
     <resources>

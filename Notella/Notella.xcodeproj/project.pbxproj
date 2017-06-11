@@ -19,6 +19,8 @@
 		4C74AC7F1EEDE14600522A34 /* Typo-Round-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C74AC7B1EEDE14600522A34 /* Typo-Round-Light.otf */; };
 		4C74AC801EEDE14600522A34 /* Typo-Round-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C74AC7C1EEDE14600522A34 /* Typo-Round-Bold.otf */; };
 		4CFADCEE1EEDE69B00EA8885 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADCED1EEDE69B00EA8885 /* Extensions.swift */; };
+		4CFADCF31EEDFA2C00EA8885 /* PulsatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADCF21EEDFA2C00EA8885 /* PulsatingView.swift */; };
+		4CFADCF51EEDFA5400EA8885 /* UIColor+NotellaColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADCF41EEDFA5400EA8885 /* UIColor+NotellaColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		4C74AC7B1EEDE14600522A34 /* Typo-Round-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Typo-Round-Light.otf"; sourceTree = "<group>"; };
 		4C74AC7C1EEDE14600522A34 /* Typo-Round-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Typo-Round-Bold.otf"; sourceTree = "<group>"; };
 		4CFADCED1EEDE69B00EA8885 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4CFADCF21EEDFA2C00EA8885 /* PulsatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulsatingView.swift; sourceTree = "<group>"; };
+		4CFADCF41EEDFA5400EA8885 /* UIColor+NotellaColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+NotellaColors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				4C74AC5A1EEDDF4600522A34 /* AppDelegate.swift */,
+				4CFADCF01EEDF9C900EA8885 /* Model */,
 				4CFADCEC1EEDE68600EA8885 /* Helpers */,
-				4C74AC6C1EEDDF9F00522A34 /* ViewControllers */,
+				4C74AC6C1EEDDF9F00522A34 /* View Controllers */,
 				4C74AC5E1EEDDF4600522A34 /* Main.storyboard */,
 				4C74AC721EEDE09100522A34 /* Assets */,
 				4C74AC631EEDDF4600522A34 /* LaunchScreen.storyboard */,
@@ -79,14 +84,14 @@
 			path = Notella;
 			sourceTree = "<group>";
 		};
-		4C74AC6C1EEDDF9F00522A34 /* ViewControllers */ = {
+		4C74AC6C1EEDDF9F00522A34 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				4C74AC6E1EEDE01500522A34 /* StyledViewController.swift */,
 				4C74AC5C1EEDDF4600522A34 /* StartViewController.swift */,
 				4C74AC701EEDE07400522A34 /* GameViewController.swift */,
 			);
-			name = ViewControllers;
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		4C74AC721EEDE09100522A34 /* Assets */ = {
@@ -113,8 +118,17 @@
 			isa = PBXGroup;
 			children = (
 				4CFADCED1EEDE69B00EA8885 /* Extensions.swift */,
+				4CFADCF41EEDFA5400EA8885 /* UIColor+NotellaColors.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		4CFADCF01EEDF9C900EA8885 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CFADCF21EEDFA2C00EA8885 /* PulsatingView.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFADCF51EEDFA5400EA8885 /* UIColor+NotellaColors.swift in Sources */,
+				4CFADCF31EEDFA2C00EA8885 /* PulsatingView.swift in Sources */,
 				4CFADCEE1EEDE69B00EA8885 /* Extensions.swift in Sources */,
 				4C74AC711EEDE07400522A34 /* GameViewController.swift in Sources */,
 				4C74AC5D1EEDDF4600522A34 /* StartViewController.swift in Sources */,
