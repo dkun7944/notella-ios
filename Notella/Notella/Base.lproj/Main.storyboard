@@ -56,7 +56,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h4-ST-ESi">
-                                <rect key="frame" x="262" y="241" width="50" height="50"/>
+                                <rect key="frame" x="260.5" y="241" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="8Em-Cp-Cfw"/>
                                     <constraint firstAttribute="width" constant="50" id="orx-z5-WK4"/>
@@ -89,16 +89,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="UCY-qB-KKS" firstAttribute="leading" secondItem="HFf-BY-nc4" secondAttribute="trailing" constant="32" id="GoS-3A-Rsk"/>
                             <constraint firstItem="UCY-qB-KKS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N4R-Hh-xPx"/>
                             <constraint firstItem="xiK-Rc-moJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PMs-RK-lkE"/>
                             <constraint firstItem="UCY-qB-KKS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-67.5" id="aaT-g2-NRP"/>
+                            <constraint firstItem="2h4-ST-ESi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="98" id="dVj-Kc-VL3"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xiK-Rc-moJ" secondAttribute="bottom" constant="50" id="eAT-Qt-iRI"/>
                             <constraint firstItem="hFA-ST-lck" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kLM-jO-xQ8"/>
                             <constraint firstItem="hFA-ST-lck" firstAttribute="top" secondItem="UCY-qB-KKS" secondAttribute="bottom" id="kcW-1u-DpB"/>
                             <constraint firstItem="HFf-BY-nc4" firstAttribute="centerY" secondItem="UCY-qB-KKS" secondAttribute="centerY" id="lsY-Cr-HGM"/>
                             <constraint firstItem="2h4-ST-ESi" firstAttribute="centerY" secondItem="UCY-qB-KKS" secondAttribute="centerY" id="mch-rd-R8q"/>
-                            <constraint firstItem="2h4-ST-ESi" firstAttribute="leading" secondItem="UCY-qB-KKS" secondAttribute="trailing" constant="32" id="thg-gZ-bJx"/>
+                            <constraint firstItem="HFf-BY-nc4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-98" id="uM8-h0-H7h"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>

@@ -16,19 +16,29 @@ class StartViewController: StyledViewController {
     
     // MARK: - Properties
     
+    var numMeasures: Int = 16
+    
     // MARK: - Setup
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setup()
+    }
+    
+    func setup() {
+        measureLabel.text = "\(numMeasures)"
     }
 
     // MARK: - Actions
     
     @IBAction func minusButtonPressed(_ sender: Any) {
+        numMeasures = (numMeasures - 1).clamped(to: 4...96)
+        measureLabel.text = "\(numMeasures)"
     }
     
     @IBAction func plusButtonPressed(_ sender: Any) {
+        numMeasures = (numMeasures + 1).clamped(to: 4...96)
+        measureLabel.text = "\(numMeasures)"
     }
 }
 
