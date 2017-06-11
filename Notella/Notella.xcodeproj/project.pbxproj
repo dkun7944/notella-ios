@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		4C74AC5B1EEDDF4600522A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74AC5A1EEDDF4600522A34 /* AppDelegate.swift */; };
-		4C74AC5D1EEDDF4600522A34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74AC5C1EEDDF4600522A34 /* ViewController.swift */; };
+		4C74AC5D1EEDDF4600522A34 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74AC5C1EEDDF4600522A34 /* StartViewController.swift */; };
 		4C74AC601EEDDF4600522A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C74AC5E1EEDDF4600522A34 /* Main.storyboard */; };
 		4C74AC621EEDDF4600522A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C74AC611EEDDF4600522A34 /* Assets.xcassets */; };
 		4C74AC651EEDDF4600522A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C74AC631EEDDF4600522A34 /* LaunchScreen.storyboard */; };
+		4C74AC6F1EEDE01500522A34 /* StyledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74AC6E1EEDE01500522A34 /* StyledViewController.swift */; };
+		4C74AC711EEDE07400522A34 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74AC701EEDE07400522A34 /* GameViewController.swift */; };
+		4C74AC7D1EEDE14600522A34 /* Typo-Round-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C74AC791EEDE14600522A34 /* Typo-Round-Thin.otf */; };
+		4C74AC7E1EEDE14600522A34 /* Typo-Round-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C74AC7A1EEDE14600522A34 /* Typo-Round-Regular.otf */; };
+		4C74AC7F1EEDE14600522A34 /* Typo-Round-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C74AC7B1EEDE14600522A34 /* Typo-Round-Light.otf */; };
+		4C74AC801EEDE14600522A34 /* Typo-Round-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C74AC7C1EEDE14600522A34 /* Typo-Round-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C74AC571EEDDF4600522A34 /* Notella.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notella.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C74AC5A1EEDDF4600522A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C74AC5C1EEDDF4600522A34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C74AC5C1EEDDF4600522A34 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		4C74AC5F1EEDDF4600522A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C74AC611EEDDF4600522A34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C74AC641EEDDF4600522A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C74AC661EEDDF4600522A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C74AC6E1EEDE01500522A34 /* StyledViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyledViewController.swift; sourceTree = "<group>"; };
+		4C74AC701EEDE07400522A34 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		4C74AC791EEDE14600522A34 /* Typo-Round-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Typo-Round-Thin.otf"; sourceTree = "<group>"; };
+		4C74AC7A1EEDE14600522A34 /* Typo-Round-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Typo-Round-Regular.otf"; sourceTree = "<group>"; };
+		4C74AC7B1EEDE14600522A34 /* Typo-Round-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Typo-Round-Light.otf"; sourceTree = "<group>"; };
+		4C74AC7C1EEDE14600522A34 /* Typo-Round-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Typo-Round-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +67,43 @@
 			isa = PBXGroup;
 			children = (
 				4C74AC5A1EEDDF4600522A34 /* AppDelegate.swift */,
-				4C74AC5C1EEDDF4600522A34 /* ViewController.swift */,
+				4C74AC6C1EEDDF9F00522A34 /* ViewControllers */,
 				4C74AC5E1EEDDF4600522A34 /* Main.storyboard */,
-				4C74AC611EEDDF4600522A34 /* Assets.xcassets */,
+				4C74AC721EEDE09100522A34 /* Assets */,
 				4C74AC631EEDDF4600522A34 /* LaunchScreen.storyboard */,
 				4C74AC661EEDDF4600522A34 /* Info.plist */,
 			);
 			path = Notella;
+			sourceTree = "<group>";
+		};
+		4C74AC6C1EEDDF9F00522A34 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C74AC6E1EEDE01500522A34 /* StyledViewController.swift */,
+				4C74AC5C1EEDDF4600522A34 /* StartViewController.swift */,
+				4C74AC701EEDE07400522A34 /* GameViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4C74AC721EEDE09100522A34 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4C74AC611EEDDF4600522A34 /* Assets.xcassets */,
+				4C74AC811EEDE3D600522A34 /* Fonts */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		4C74AC811EEDE3D600522A34 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4C74AC791EEDE14600522A34 /* Typo-Round-Thin.otf */,
+				4C74AC7B1EEDE14600522A34 /* Typo-Round-Light.otf */,
+				4C74AC7A1EEDE14600522A34 /* Typo-Round-Regular.otf */,
+				4C74AC7C1EEDE14600522A34 /* Typo-Round-Bold.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C74AC651EEDDF4600522A34 /* LaunchScreen.storyboard in Resources */,
+				4C74AC7E1EEDE14600522A34 /* Typo-Round-Regular.otf in Resources */,
 				4C74AC621EEDDF4600522A34 /* Assets.xcassets in Resources */,
 				4C74AC601EEDDF4600522A34 /* Main.storyboard in Resources */,
+				4C74AC801EEDE14600522A34 /* Typo-Round-Bold.otf in Resources */,
+				4C74AC7D1EEDE14600522A34 /* Typo-Round-Thin.otf in Resources */,
+				4C74AC7F1EEDE14600522A34 /* Typo-Round-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C74AC5D1EEDDF4600522A34 /* ViewController.swift in Sources */,
+				4C74AC711EEDE07400522A34 /* GameViewController.swift in Sources */,
+				4C74AC5D1EEDDF4600522A34 /* StartViewController.swift in Sources */,
+				4C74AC6F1EEDE01500522A34 /* StyledViewController.swift in Sources */,
 				4C74AC5B1EEDDF4600522A34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

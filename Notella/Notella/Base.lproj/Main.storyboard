@@ -1,14 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Typo-Round-Bold.otf">
+            <string>TypoRoundBoldDemo</string>
+        </array>
+        <array key="Typo-Round-Light.otf">
+            <string>TypoRoundLightDemo</string>
+        </array>
+        <array key="Typo-Round-Regular.otf">
+            <string>TypoRoundRegularDemo</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="Notella" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +31,106 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCY-qB-KKS">
+                                <rect key="frame" x="146.5" y="208" width="83.5" height="116"/>
+                                <fontDescription key="fontDescription" name="TypoRoundLightDemo" family="Typo Round Light Demo" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="measures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFA-ST-lck">
+                                <rect key="frame" x="123" y="324" width="130.5" height="36"/>
+                                <fontDescription key="fontDescription" name="TypoRoundRegularDemo" family="Typo Round Regular Demo" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFf-BY-nc4">
+                                <rect key="frame" x="64" y="241" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="duN-l7-40B"/>
+                                    <constraint firstAttribute="height" constant="50" id="xg5-6f-l0I"/>
+                                </constraints>
+                                <state key="normal" image="minus"/>
+                                <connections>
+                                    <action selector="minusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DaN-OU-Vf8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h4-ST-ESi">
+                                <rect key="frame" x="262" y="241" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8Em-Cp-Cfw"/>
+                                    <constraint firstAttribute="width" constant="50" id="orx-z5-WK4"/>
+                                </constraints>
+                                <state key="normal" image="plus"/>
+                                <connections>
+                                    <action selector="plusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IV0-3C-itC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiK-Rc-moJ">
+                                <rect key="frame" x="87" y="567" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.56470588235294117" green="0.070588235294117646" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="GsT-1N-iVw"/>
+                                    <constraint firstAttribute="height" constant="50" id="YZx-cW-Xdr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TypoRoundBoldDemo" family="Typo Round Bold Demo" pointSize="24"/>
+                                <state key="normal" title="start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="F4V-0R-5qS" kind="show" id="q7a-W1-APP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UCY-qB-KKS" firstAttribute="leading" secondItem="HFf-BY-nc4" secondAttribute="trailing" constant="32" id="GoS-3A-Rsk"/>
+                            <constraint firstItem="UCY-qB-KKS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N4R-Hh-xPx"/>
+                            <constraint firstItem="xiK-Rc-moJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PMs-RK-lkE"/>
+                            <constraint firstItem="UCY-qB-KKS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-67.5" id="aaT-g2-NRP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xiK-Rc-moJ" secondAttribute="bottom" constant="50" id="eAT-Qt-iRI"/>
+                            <constraint firstItem="hFA-ST-lck" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kLM-jO-xQ8"/>
+                            <constraint firstItem="hFA-ST-lck" firstAttribute="top" secondItem="UCY-qB-KKS" secondAttribute="bottom" id="kcW-1u-DpB"/>
+                            <constraint firstItem="HFf-BY-nc4" firstAttribute="centerY" secondItem="UCY-qB-KKS" secondAttribute="centerY" id="lsY-Cr-HGM"/>
+                            <constraint firstItem="2h4-ST-ESi" firstAttribute="centerY" secondItem="UCY-qB-KKS" secondAttribute="centerY" id="mch-rd-R8q"/>
+                            <constraint firstItem="2h4-ST-ESi" firstAttribute="leading" secondItem="UCY-qB-KKS" secondAttribute="trailing" constant="32" id="thg-gZ-bJx"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="measureLabel" destination="UCY-qB-KKS" id="Ipr-GZ-OVk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Game View Controller-->
+        <scene sceneID="RBA-fb-2gc">
+            <objects>
+                <viewController id="F4V-0R-5qS" customClass="GameViewController" customModule="Notella" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UcZ-SH-eeL"/>
+                        <viewControllerLayoutGuide type="bottom" id="VNQ-Ho-PVD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lFZ-9h-leb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u52-re-0e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="97"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="minus" width="25" height="25"/>
+        <image name="plus" width="25" height="25"/>
+    </resources>
 </document>
