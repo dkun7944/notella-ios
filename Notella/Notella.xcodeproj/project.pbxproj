@@ -21,31 +21,84 @@
 		4CFADCEE1EEDE69B00EA8885 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADCED1EEDE69B00EA8885 /* Extensions.swift */; };
 		4CFADCF31EEDFA2C00EA8885 /* PulsatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADCF21EEDFA2C00EA8885 /* PulsatingView.swift */; };
 		4CFADCF51EEDFA5400EA8885 /* UIColor+NotellaColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADCF41EEDFA5400EA8885 /* UIColor+NotellaColors.swift */; };
-		4CFADD2D1EEDFDDC00EA8885 /* AEAudioController+Audiobus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADCFB1EEDFDDC00EA8885 /* AEAudioController+Audiobus.m */; };
-		4CFADD2E1EEDFDDC00EA8885 /* AEAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADCFE1EEDFDDC00EA8885 /* AEAudioController.m */; };
-		4CFADD2F1EEDFDDC00EA8885 /* AEAudioFileLoaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD001EEDFDDC00EA8885 /* AEAudioFileLoaderOperation.m */; };
-		4CFADD301EEDFDDC00EA8885 /* AEAudioFilePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD021EEDFDDC00EA8885 /* AEAudioFilePlayer.m */; };
-		4CFADD311EEDFDDC00EA8885 /* AEAudioFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD041EEDFDDC00EA8885 /* AEAudioFileWriter.m */; };
-		4CFADD321EEDFDDC00EA8885 /* AEAudioUnitChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD061EEDFDDC00EA8885 /* AEAudioUnitChannel.m */; };
-		4CFADD331EEDFDDC00EA8885 /* AEAudioUnitFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD081EEDFDDC00EA8885 /* AEAudioUnitFilter.m */; };
-		4CFADD341EEDFDDC00EA8885 /* AEBlockAudioReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD0A1EEDFDDC00EA8885 /* AEBlockAudioReceiver.m */; };
-		4CFADD351EEDFDDC00EA8885 /* AEBlockChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD0C1EEDFDDC00EA8885 /* AEBlockChannel.m */; };
-		4CFADD361EEDFDDC00EA8885 /* AEBlockFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD0E1EEDFDDC00EA8885 /* AEBlockFilter.m */; };
-		4CFADD371EEDFDDC00EA8885 /* AEBlockScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD101EEDFDDC00EA8885 /* AEBlockScheduler.m */; };
-		4CFADD381EEDFDDC00EA8885 /* AEFloatConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD121EEDFDDC00EA8885 /* AEFloatConverter.m */; };
-		4CFADD391EEDFDDC00EA8885 /* AEUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD131EEDFDDC00EA8885 /* AEUtilities.c */; };
+		4CFADD2D1EEDFDDC00EA8885 /* AEAudioController+Audiobus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADCFB1EEDFDDC00EA8885 /* AEAudioController+Audiobus.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD2E1EEDFDDC00EA8885 /* AEAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADCFE1EEDFDDC00EA8885 /* AEAudioController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD2F1EEDFDDC00EA8885 /* AEAudioFileLoaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD001EEDFDDC00EA8885 /* AEAudioFileLoaderOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD301EEDFDDC00EA8885 /* AEAudioFilePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD021EEDFDDC00EA8885 /* AEAudioFilePlayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD311EEDFDDC00EA8885 /* AEAudioFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD041EEDFDDC00EA8885 /* AEAudioFileWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD321EEDFDDC00EA8885 /* AEAudioUnitChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD061EEDFDDC00EA8885 /* AEAudioUnitChannel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD331EEDFDDC00EA8885 /* AEAudioUnitFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD081EEDFDDC00EA8885 /* AEAudioUnitFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD341EEDFDDC00EA8885 /* AEBlockAudioReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD0A1EEDFDDC00EA8885 /* AEBlockAudioReceiver.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD351EEDFDDC00EA8885 /* AEBlockChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD0C1EEDFDDC00EA8885 /* AEBlockChannel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD361EEDFDDC00EA8885 /* AEBlockFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD0E1EEDFDDC00EA8885 /* AEBlockFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD371EEDFDDC00EA8885 /* AEBlockScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD101EEDFDDC00EA8885 /* AEBlockScheduler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD381EEDFDDC00EA8885 /* AEFloatConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD121EEDFDDC00EA8885 /* AEFloatConverter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD391EEDFDDC00EA8885 /* AEUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD131EEDFDDC00EA8885 /* AEUtilities.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4CFADD3A1EEDFDDC00EA8885 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD171EEDFDDC00EA8885 /* README.markdown */; };
 		4CFADD3B1EEDFDDC00EA8885 /* TPCircularBuffer+AudioBufferList.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD181EEDFDDC00EA8885 /* TPCircularBuffer+AudioBufferList.c */; };
 		4CFADD3C1EEDFDDC00EA8885 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD1A1EEDFDDC00EA8885 /* TPCircularBuffer.c */; };
-		4CFADD3D1EEDFDDC00EA8885 /* AEExpanderFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD1E1EEDFDDC00EA8885 /* AEExpanderFilter.m */; };
-		4CFADD3E1EEDFDDC00EA8885 /* AELimiter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD201EEDFDDC00EA8885 /* AELimiter.m */; };
-		4CFADD3F1EEDFDDC00EA8885 /* AELimiterFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD221EEDFDDC00EA8885 /* AELimiterFilter.m */; };
-		4CFADD401EEDFDDC00EA8885 /* AEMixerBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD241EEDFDDC00EA8885 /* AEMixerBuffer.m */; };
-		4CFADD411EEDFDDC00EA8885 /* AEPlaythroughChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD261EEDFDDC00EA8885 /* AEPlaythroughChannel.m */; };
-		4CFADD421EEDFDDC00EA8885 /* AERecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD281EEDFDDC00EA8885 /* AERecorder.m */; };
+		4CFADD3D1EEDFDDC00EA8885 /* AEExpanderFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD1E1EEDFDDC00EA8885 /* AEExpanderFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD3E1EEDFDDC00EA8885 /* AELimiter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD201EEDFDDC00EA8885 /* AELimiter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD3F1EEDFDDC00EA8885 /* AELimiterFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD221EEDFDDC00EA8885 /* AELimiterFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD401EEDFDDC00EA8885 /* AEMixerBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD241EEDFDDC00EA8885 /* AEMixerBuffer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD411EEDFDDC00EA8885 /* AEPlaythroughChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD261EEDFDDC00EA8885 /* AEPlaythroughChannel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFADD421EEDFDDC00EA8885 /* AERecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD281EEDFDDC00EA8885 /* AERecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4CFADD451EEDFDE200EA8885 /* Metronome.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD431EEDFDE200EA8885 /* Metronome.m */; };
 		4CFADD4D1EEE0AC700EA8885 /* PulsatingViewCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD4C1EEE0AC700EA8885 /* PulsatingViewCollection.swift */; };
+		4CFADD681EEEB0F400EA8885 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFADD671EEEB0F400EA8885 /* Symbols.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CFADD591EEEB0D900EA8885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CFADD4F1EEEB0D900EA8885 /* MusicKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 61402B241A08251D003AE7A7;
+			remoteInfo = MusicKit;
+		};
+		4CFADD5B1EEEB0D900EA8885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CFADD4F1EEEB0D900EA8885 /* MusicKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 610DC5A11A0831DF00BEEBFD;
+			remoteInfo = MusicKitApp;
+		};
+		4CFADD5D1EEEB0D900EA8885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CFADD4F1EEEB0D900EA8885 /* MusicKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 610DC5B91A0831DF00BEEBFD;
+			remoteInfo = "MusicKitTests-iOS";
+		};
+		4CFADD5F1EEEB0D900EA8885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CFADD4F1EEEB0D900EA8885 /* MusicKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 616C1ACD1A0C055E0020EAA8;
+			remoteInfo = MusicKitOSX;
+		};
+		4CFADD611EEEB0D900EA8885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CFADD4F1EEEB0D900EA8885 /* MusicKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 616C1D7D1A0D97490020EAA8;
+			remoteInfo = MusicKitOSXApp;
+		};
+		4CFADD631EEEB0D900EA8885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CFADD4F1EEEB0D900EA8885 /* MusicKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 616C1D921A0D97490020EAA8;
+			remoteInfo = "MusicKitTests-OSX";
+		};
+		4CFADD651EEEB0D900EA8885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CFADD4F1EEEB0D900EA8885 /* MusicKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 618C6C2D1A13DC76008314B2;
+			remoteInfo = PreviewGenerator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4C74AC571EEDDF4600522A34 /* Notella.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notella.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +168,8 @@
 		4CFADD441EEDFDE200EA8885 /* Metronome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Metronome.h; sourceTree = "<group>"; };
 		4CFADD4A1EEDFEB900EA8885 /* Notella-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Notella-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		4CFADD4C1EEE0AC700EA8885 /* PulsatingViewCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulsatingViewCollection.swift; sourceTree = "<group>"; };
+		4CFADD4F1EEEB0D900EA8885 /* MusicKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MusicKit.xcodeproj; path = ../../musickit/MusicKit.xcodeproj; sourceTree = "<group>"; };
+		4CFADD671EEEB0F400EA8885 /* Symbols.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Symbols.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +186,7 @@
 		4C74AC4E1EEDDF4600522A34 = {
 			isa = PBXGroup;
 			children = (
+				4CFADD4F1EEEB0D900EA8885 /* MusicKit.xcodeproj */,
 				4C74AC591EEDDF4600522A34 /* Notella */,
 				4C74AC581EEDDF4600522A34 /* Products */,
 			);
@@ -174,6 +230,7 @@
 		4C74AC721EEDE09100522A34 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4CFADD671EEEB0F400EA8885 /* Symbols.xcassets */,
 				4C74AC611EEDDF4600522A34 /* Assets.xcassets */,
 				4C74AC811EEDE3D600522A34 /* Fonts */,
 			);
@@ -297,6 +354,20 @@
 			path = TPCircularBuffer;
 			sourceTree = "<group>";
 		};
+		4CFADD501EEEB0D900EA8885 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CFADD5A1EEEB0D900EA8885 /* MusicKit.framework */,
+				4CFADD5C1EEEB0D900EA8885 /* MusicKitApp.app */,
+				4CFADD5E1EEEB0D900EA8885 /* MusicKitTests-iOS.xctest */,
+				4CFADD601EEEB0D900EA8885 /* MusicKitOSX.framework */,
+				4CFADD621EEEB0D900EA8885 /* MusicKitOSXApp.app */,
+				4CFADD641EEEB0D900EA8885 /* MusicKitTests-OSX.xctest */,
+				4CFADD661EEEB0D900EA8885 /* PreviewGenerator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -345,12 +416,70 @@
 			mainGroup = 4C74AC4E1EEDDF4600522A34;
 			productRefGroup = 4C74AC581EEDDF4600522A34 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4CFADD501EEEB0D900EA8885 /* Products */;
+					ProjectRef = 4CFADD4F1EEEB0D900EA8885 /* MusicKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4C74AC561EEDDF4600522A34 /* Notella */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4CFADD5A1EEEB0D900EA8885 /* MusicKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MusicKit.framework;
+			remoteRef = 4CFADD591EEEB0D900EA8885 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CFADD5C1EEEB0D900EA8885 /* MusicKitApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MusicKitApp.app;
+			remoteRef = 4CFADD5B1EEEB0D900EA8885 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CFADD5E1EEEB0D900EA8885 /* MusicKitTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MusicKitTests-iOS.xctest";
+			remoteRef = 4CFADD5D1EEEB0D900EA8885 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CFADD601EEEB0D900EA8885 /* MusicKitOSX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MusicKitOSX.framework;
+			remoteRef = 4CFADD5F1EEEB0D900EA8885 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CFADD621EEEB0D900EA8885 /* MusicKitOSXApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MusicKitOSXApp.app;
+			remoteRef = 4CFADD611EEEB0D900EA8885 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CFADD641EEEB0D900EA8885 /* MusicKitTests-OSX.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MusicKitTests-OSX.xctest";
+			remoteRef = 4CFADD631EEEB0D900EA8885 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CFADD661EEEB0D900EA8885 /* PreviewGenerator.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PreviewGenerator.app;
+			remoteRef = 4CFADD651EEEB0D900EA8885 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4C74AC551EEDDF4600522A34 /* Resources */ = {
@@ -362,6 +491,7 @@
 				4C74AC621EEDDF4600522A34 /* Assets.xcassets in Resources */,
 				4C74AC601EEDDF4600522A34 /* Main.storyboard in Resources */,
 				4C74AC801EEDE14600522A34 /* Typo-Round-Bold.otf in Resources */,
+				4CFADD681EEEB0F400EA8885 /* Symbols.xcassets in Resources */,
 				4C74AC7D1EEDE14600522A34 /* Typo-Round-Thin.otf in Resources */,
 				4C74AC7F1EEDE14600522A34 /* Typo-Round-Light.otf in Resources */,
 			);
@@ -527,7 +657,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DEVELOPMENT_TEAM = M24FQVR7AD;
 				INFOPLIST_FILE = Notella/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -542,7 +672,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DEVELOPMENT_TEAM = M24FQVR7AD;
 				INFOPLIST_FILE = Notella/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

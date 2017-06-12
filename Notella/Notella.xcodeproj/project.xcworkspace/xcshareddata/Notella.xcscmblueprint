@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F4F7B9084803B790ABFBBE378E2E432E4EA2D21D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2E8883083A02170F75621AA0C0465EF14B4C8EC7" : 9223372036854775807,
+    "F38BB934BBA246B7E08EFAE3040714836136EC9C" : 9223372036854775807,
+    "F4F7B9084803B790ABFBBE378E2E432E4EA2D21D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "721C1269-722F-409E-8B8C-52D9FC627187",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2E8883083A02170F75621AA0C0465EF14B4C8EC7" : "musickit\/Submodules\/mxml\/",
+    "F38BB934BBA246B7E08EFAE3040714836136EC9C" : "musickit\/",
+    "F4F7B9084803B790ABFBBE378E2E432E4EA2D21D" : "notella-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Notella",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Notella\/Notella.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:venturemedia\/mxml.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2E8883083A02170F75621AA0C0465EF14B4C8EC7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dkun7944\/musickit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F38BB934BBA246B7E08EFAE3040714836136EC9C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dkun7944\/notella-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F4F7B9084803B790ABFBBE378E2E432E4EA2D21D"
+    }
+  ]
+}
