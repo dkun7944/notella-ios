@@ -46,6 +46,10 @@
 		4CFADD451EEDFDE200EA8885 /* Metronome.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD431EEDFDE200EA8885 /* Metronome.m */; };
 		4CFADD4D1EEE0AC700EA8885 /* PulsatingViewCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD4C1EEE0AC700EA8885 /* PulsatingViewCollection.swift */; };
 		4CFADD681EEEB0F400EA8885 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFADD671EEEB0F400EA8885 /* Symbols.xcassets */; };
+		4CFADD751EEEB6DD00EA8885 /* ScoreView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD731EEEB6DD00EA8885 /* ScoreView.mm */; };
+		4CFADD771EEEB6E300EA8885 /* twinkle.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4CFADD761EEEB6E300EA8885 /* twinkle.xml */; };
+		4CFADD791EEEB73100EA8885 /* MusicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFADD5A1EEEB0D900EA8885 /* MusicKit.framework */; };
+		4CFADD7A1EEEB73100EA8885 /* MusicKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFADD5A1EEEB0D900EA8885 /* MusicKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +102,28 @@
 			remoteGlobalIDString = 618C6C2D1A13DC76008314B2;
 			remoteInfo = PreviewGenerator;
 		};
+		4CFADD7B1EEEB73100EA8885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CFADD4F1EEEB0D900EA8885 /* MusicKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 61402B231A08251D003AE7A7;
+			remoteInfo = MusicKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4CFADD7D1EEEB73100EA8885 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4CFADD7A1EEEB73100EA8885 /* MusicKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4C74AC571EEDDF4600522A34 /* Notella.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notella.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +195,9 @@
 		4CFADD4C1EEE0AC700EA8885 /* PulsatingViewCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulsatingViewCollection.swift; sourceTree = "<group>"; };
 		4CFADD4F1EEEB0D900EA8885 /* MusicKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MusicKit.xcodeproj; path = ../../musickit/MusicKit.xcodeproj; sourceTree = "<group>"; };
 		4CFADD671EEEB0F400EA8885 /* Symbols.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Symbols.xcassets; sourceTree = "<group>"; };
+		4CFADD731EEEB6DD00EA8885 /* ScoreView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScoreView.mm; sourceTree = "<group>"; };
+		4CFADD741EEEB6DD00EA8885 /* ScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreView.h; sourceTree = "<group>"; };
+		4CFADD761EEEB6E300EA8885 /* twinkle.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = twinkle.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFADD791EEEB73100EA8885 /* MusicKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +239,7 @@
 				4CFADCEC1EEDE68600EA8885 /* Helpers */,
 				4C74AC6C1EEDDF9F00522A34 /* View Controllers */,
 				4C74AC5E1EEDDF4600522A34 /* Main.storyboard */,
-				4C74AC721EEDE09100522A34 /* Assets */,
+				4C74AC721EEDE09100522A34 /* Resources */,
 				4C74AC631EEDDF4600522A34 /* LaunchScreen.storyboard */,
 				4C74AC661EEDDF4600522A34 /* Info.plist */,
 			);
@@ -227,14 +256,15 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		4C74AC721EEDE09100522A34 /* Assets */ = {
+		4C74AC721EEDE09100522A34 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4CFADD761EEEB6E300EA8885 /* twinkle.xml */,
 				4CFADD671EEEB0F400EA8885 /* Symbols.xcassets */,
 				4C74AC611EEDDF4600522A34 /* Assets.xcassets */,
 				4C74AC811EEDE3D600522A34 /* Fonts */,
 			);
-			name = Assets;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		4C74AC811EEDE3D600522A34 /* Fonts */ = {
@@ -264,6 +294,8 @@
 				4CFADCF21EEDFA2C00EA8885 /* PulsatingView.swift */,
 				4CFADD441EEDFDE200EA8885 /* Metronome.h */,
 				4CFADD431EEDFDE200EA8885 /* Metronome.m */,
+				4CFADD741EEEB6DD00EA8885 /* ScoreView.h */,
+				4CFADD731EEEB6DD00EA8885 /* ScoreView.mm */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -378,10 +410,12 @@
 				4C74AC531EEDDF4600522A34 /* Sources */,
 				4C74AC541EEDDF4600522A34 /* Frameworks */,
 				4C74AC551EEDDF4600522A34 /* Resources */,
+				4CFADD7D1EEEB73100EA8885 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4CFADD7C1EEEB73100EA8885 /* PBXTargetDependency */,
 			);
 			name = Notella;
 			productName = Notella;
@@ -490,6 +524,7 @@
 				4C74AC7E1EEDE14600522A34 /* Typo-Round-Regular.otf in Resources */,
 				4C74AC621EEDDF4600522A34 /* Assets.xcassets in Resources */,
 				4C74AC601EEDDF4600522A34 /* Main.storyboard in Resources */,
+				4CFADD771EEEB6E300EA8885 /* twinkle.xml in Resources */,
 				4C74AC801EEDE14600522A34 /* Typo-Round-Bold.otf in Resources */,
 				4CFADD681EEEB0F400EA8885 /* Symbols.xcassets in Resources */,
 				4C74AC7D1EEDE14600522A34 /* Typo-Round-Thin.otf in Resources */,
@@ -515,6 +550,7 @@
 				4CFADD2D1EEDFDDC00EA8885 /* AEAudioController+Audiobus.m in Sources */,
 				4CFADD2E1EEDFDDC00EA8885 /* AEAudioController.m in Sources */,
 				4CFADD331EEDFDDC00EA8885 /* AEAudioUnitFilter.m in Sources */,
+				4CFADD751EEEB6DD00EA8885 /* ScoreView.mm in Sources */,
 				4CFADD3D1EEDFDDC00EA8885 /* AEExpanderFilter.m in Sources */,
 				4CFADD3E1EEDFDDC00EA8885 /* AELimiter.m in Sources */,
 				4CFADD4D1EEE0AC700EA8885 /* PulsatingViewCollection.swift in Sources */,
@@ -539,6 +575,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CFADD7C1EEEB73100EA8885 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MusicKit;
+			targetProxy = 4CFADD7B1EEEB73100EA8885 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4C74AC5E1EEDDF4600522A34 /* Main.storyboard */ = {
@@ -659,6 +703,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DEVELOPMENT_TEAM = M24FQVR7AD;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/danielkuntz/Git Repositories/musickit\"",
+					"\"/Users/danielkuntz/Git Repositories/musickit/Libraries\"",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = Notella/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielkuntz.Notella;
@@ -674,6 +723,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DEVELOPMENT_TEAM = M24FQVR7AD;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/danielkuntz/Git Repositories/musickit\"",
+					"\"/Users/danielkuntz/Git Repositories/musickit/Libraries\"",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = Notella/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielkuntz.Notella;

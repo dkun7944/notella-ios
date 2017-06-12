@@ -8,3 +8,4 @@
 
 #import "TheAmazingAudioEngine.h"
 #import "Metronome.h"
+#import "ScoreView.h"
