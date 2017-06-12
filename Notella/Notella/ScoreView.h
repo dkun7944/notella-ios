@@ -17,7 +17,7 @@
 
 @property(nonatomic, strong) UICollectionView* collectionView;
 
-- (void)setupWithXml:(NSData *)xmlData noteColors:(NSArray *)noteColors;
+- (void)setupWithXmlPath:(NSString *)xmlPath;
 - (void)setDelegate:(id <ScoreViewDelegate>)aDelegate;
 - (void)moveCursorToMeasureIndex:(int)index measureTime:(int)time;
 - (void)hideCursor;
