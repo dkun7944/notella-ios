@@ -122,30 +122,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RD0-e3-tPQ" customClass="PulsatingViewCollection" customModule="Notella" customModuleProvider="target">
-                                <rect key="frame" x="87" y="308" width="200" height="50"/>
+                                <rect key="frame" x="87" y="130" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dVs-ae-ECa"/>
                                     <constraint firstAttribute="width" constant="200" id="hhR-4w-Ux5"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1M-FJ-bhB">
-                                <rect key="frame" x="153" y="569" width="69" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1M-FJ-bhB">
+                                <rect key="frame" x="32" y="583" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="2Um-Ps-zeb"/>
-                                    <constraint firstAttribute="width" constant="69" id="hl8-nR-vIa"/>
+                                    <constraint firstAttribute="height" constant="50" id="2Um-Ps-zeb"/>
+                                    <constraint firstAttribute="width" constant="50" id="hl8-nR-vIa"/>
                                 </constraints>
-                                <state key="normal" title="Start/stop"/>
+                                <state key="normal" image="pause"/>
                                 <connections>
                                     <action selector="startStopPressed:" destination="F4V-0R-5qS" eventType="touchUpInside" id="ODd-l2-bSx"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheet-music" translatesAutoresizingMaskIntoConstraints="NO" id="WoE-Ml-hwH">
+                                <rect key="frame" x="8.5" y="277" width="357" height="113"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ 16" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tg-We-slb">
+                                <rect key="frame" x="287.5" y="591" width="51.5" height="41.5"/>
+                                <fontDescription key="fontDescription" name="TypoRoundRegularDemo" family="Typo Round Regular Demo" pointSize="35"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kto-2x-ipS">
+                                <rect key="frame" x="262" y="583.5" width="13.5" height="50.5"/>
+                                <fontDescription key="fontDescription" name="TypoRoundBoldDemo" family="Typo Round Bold Demo" pointSize="40"/>
+                                <color key="textColor" red="0.56470588239999997" green="0.070588235289999995" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VNQ-Ho-PVD" firstAttribute="top" secondItem="F1M-FJ-bhB" secondAttribute="bottom" constant="68" id="BTo-42-1Ml"/>
-                            <constraint firstItem="F1M-FJ-bhB" firstAttribute="centerX" secondItem="lFZ-9h-leb" secondAttribute="centerX" id="OLL-mP-EVG"/>
+                            <constraint firstItem="VNQ-Ho-PVD" firstAttribute="top" secondItem="F1M-FJ-bhB" secondAttribute="bottom" constant="34" id="DiZ-iY-IRm"/>
+                            <constraint firstItem="F1M-FJ-bhB" firstAttribute="leading" secondItem="lFZ-9h-leb" secondAttribute="leading" constant="32" id="Igh-0A-roa"/>
+                            <constraint firstItem="2tg-We-slb" firstAttribute="leading" secondItem="Kto-2x-ipS" secondAttribute="trailing" constant="12" id="Iyg-pX-0yl"/>
+                            <constraint firstItem="WoE-Ml-hwH" firstAttribute="centerY" secondItem="lFZ-9h-leb" secondAttribute="centerY" id="Nps-8A-Fkv"/>
+                            <constraint firstAttribute="trailing" secondItem="2tg-We-slb" secondAttribute="trailing" constant="36" id="RYN-St-po3"/>
+                            <constraint firstItem="RD0-e3-tPQ" firstAttribute="centerY" secondItem="lFZ-9h-leb" secondAttribute="centerY" constant="-178" id="T90-3h-Z0c"/>
+                            <constraint firstItem="Kto-2x-ipS" firstAttribute="baseline" secondItem="2tg-We-slb" secondAttribute="baseline" id="Vc6-Bd-ao5"/>
+                            <constraint firstItem="Kto-2x-ipS" firstAttribute="baseline" secondItem="F1M-FJ-bhB" secondAttribute="baseline" constant="1" id="Y3M-Ep-W1D"/>
                             <constraint firstItem="RD0-e3-tPQ" firstAttribute="centerX" secondItem="lFZ-9h-leb" secondAttribute="centerX" id="gfz-1Y-ySx"/>
-                            <constraint firstItem="RD0-e3-tPQ" firstAttribute="centerY" secondItem="lFZ-9h-leb" secondAttribute="centerY" id="uy2-7L-Pl5"/>
+                            <constraint firstItem="WoE-Ml-hwH" firstAttribute="centerX" secondItem="lFZ-9h-leb" secondAttribute="centerX" id="l3R-K1-VpE"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -155,11 +175,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u52-re-0e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="991" y="38"/>
+            <point key="canvasLocation" x="989.60000000000002" y="37.331334332833585"/>
         </scene>
     </scenes>
     <resources>
         <image name="minus" width="25" height="25"/>
+        <image name="pause" width="30" height="30"/>
         <image name="plus" width="25" height="25"/>
+        <image name="sheet-music" width="357" height="113"/>
     </resources>
 </document>
