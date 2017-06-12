@@ -13,6 +13,7 @@ class GameViewController: StyledViewController {
     // MARK: - Outlets
     
     @IBOutlet var pulsatingViewCollection: PulsatingViewCollection!
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var scoreView: ScoreView!
     
     // MARK: - Properties
@@ -33,8 +34,11 @@ class GameViewController: StyledViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let offset = CGPoint(x: 400, y: 0)
-        scoreView.collectionView.setContentOffset(offset, animated: true)
+        
+        let offset = CGPoint(x: 1200, y: 0)
+        UIView.animate(withDuration: 10, delay: 0, options: [.curveLinear], animations: {
+            self.scrollView.setContentOffset(offset, animated: false)
+        }, completion: nil)
     }
 
     func setup() {
@@ -46,6 +50,7 @@ class GameViewController: StyledViewController {
     func renderScore() {
         let xmlPath = Bundle.main.path(forResource: "twinkle", ofType: "xml")
         scoreView.setup(withXmlPath: xmlPath)
+        scrollView.contentSize = CGSize(width: scoreView.frame.width, height: scoreView.frame.height)
     }
     
     // MARK: - TempoDelegate Methods

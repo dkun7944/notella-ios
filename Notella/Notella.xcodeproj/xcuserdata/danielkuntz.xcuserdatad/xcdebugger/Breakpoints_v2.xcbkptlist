@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Notella/GameViewController.swift"
-            timestampString = "518962641.637736"
+            timestampString = "518963336.097964"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "pulse()"
             landmarkType = "7">
          </BreakpointContent>

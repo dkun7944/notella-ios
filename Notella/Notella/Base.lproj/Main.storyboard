@@ -121,13 +121,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCS-96-kr0" customClass="ScoreView">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ab6-Me-Q1i">
                                 <rect key="frame" x="0.0" y="233" width="375" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCS-96-kr0" customClass="ScoreView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="zvn-VS-4Ks"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="HLC-Ak-ie2"/>
+                                    <constraint firstAttribute="bottom" secondItem="vCS-96-kr0" secondAttribute="bottom" id="Blp-4j-CKE"/>
+                                    <constraint firstItem="vCS-96-kr0" firstAttribute="top" secondItem="Ab6-Me-Q1i" secondAttribute="top" id="SjM-I9-LhJ"/>
+                                    <constraint firstAttribute="height" constant="200" id="VGy-hB-bIQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="vCS-96-kr0" secondAttribute="trailing" id="hjq-nZ-Ajx"/>
+                                    <constraint firstItem="vCS-96-kr0" firstAttribute="centerX" secondItem="Ab6-Me-Q1i" secondAttribute="centerX" id="igL-Ka-cQS"/>
+                                    <constraint firstItem="vCS-96-kr0" firstAttribute="leading" secondItem="Ab6-Me-Q1i" secondAttribute="leading" id="yGK-xz-dXq"/>
                                 </constraints>
-                            </view>
+                            </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RD0-e3-tPQ" customClass="PulsatingViewCollection" customModule="Notella" customModuleProvider="target">
                                 <rect key="frame" x="87" y="130" width="200" height="50"/>
                                 <constraints>
@@ -160,23 +173,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ab6-Me-Q1i" firstAttribute="leading" secondItem="lFZ-9h-leb" secondAttribute="leading" id="C2A-XB-gTY"/>
                             <constraint firstItem="VNQ-Ho-PVD" firstAttribute="top" secondItem="F1M-FJ-bhB" secondAttribute="bottom" constant="34" id="DiZ-iY-IRm"/>
+                            <constraint firstAttribute="trailing" secondItem="Ab6-Me-Q1i" secondAttribute="trailing" id="EKd-Im-fYY"/>
                             <constraint firstItem="F1M-FJ-bhB" firstAttribute="leading" secondItem="lFZ-9h-leb" secondAttribute="leading" constant="32" id="Igh-0A-roa"/>
                             <constraint firstItem="2tg-We-slb" firstAttribute="leading" secondItem="Kto-2x-ipS" secondAttribute="trailing" constant="12" id="Iyg-pX-0yl"/>
-                            <constraint firstAttribute="trailing" secondItem="vCS-96-kr0" secondAttribute="trailing" id="Pjy-5K-vAX"/>
                             <constraint firstAttribute="trailing" secondItem="2tg-We-slb" secondAttribute="trailing" constant="36" id="RYN-St-po3"/>
-                            <constraint firstItem="vCS-96-kr0" firstAttribute="centerY" secondItem="lFZ-9h-leb" secondAttribute="centerY" id="SqH-Hs-1H1"/>
                             <constraint firstItem="RD0-e3-tPQ" firstAttribute="centerY" secondItem="lFZ-9h-leb" secondAttribute="centerY" constant="-178" id="T90-3h-Z0c"/>
                             <constraint firstItem="Kto-2x-ipS" firstAttribute="baseline" secondItem="2tg-We-slb" secondAttribute="baseline" id="Vc6-Bd-ao5"/>
                             <constraint firstItem="Kto-2x-ipS" firstAttribute="baseline" secondItem="F1M-FJ-bhB" secondAttribute="baseline" constant="1" id="Y3M-Ep-W1D"/>
-                            <constraint firstItem="vCS-96-kr0" firstAttribute="leading" secondItem="lFZ-9h-leb" secondAttribute="leading" id="fns-fL-RL9"/>
                             <constraint firstItem="RD0-e3-tPQ" firstAttribute="centerX" secondItem="lFZ-9h-leb" secondAttribute="centerX" id="gfz-1Y-ySx"/>
+                            <constraint firstItem="Ab6-Me-Q1i" firstAttribute="centerY" secondItem="lFZ-9h-leb" secondAttribute="centerY" id="vvZ-7C-5xA"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="pulsatingViewCollection" destination="RD0-e3-tPQ" id="sYq-UC-syO"/>
                         <outlet property="scoreView" destination="vCS-96-kr0" id="o46-xE-cr8"/>
+                        <outlet property="scrollView" destination="Ab6-Me-Q1i" id="UDG-dZ-NMN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u52-re-0e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
