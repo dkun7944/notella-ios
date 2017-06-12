@@ -12,7 +12,7 @@ class GameViewController: StyledViewController {
 
     // MARK: - Outlets
     
-    @IBOutlet var pulsatingView: PulsatingView!
+    @IBOutlet var pulsatingViewCollection: PulsatingViewCollection!
     
     // MARK: - Properties
     
@@ -34,14 +34,17 @@ class GameViewController: StyledViewController {
     // MARK: - TempoDelegate Methods
     
     func pulseDownbeat() {
-        DispatchQueue.main.async {
-            self.pulsatingView.pulse()
-        }
+        pulse()
     }
     
     func pulseUpbeat() {
+        pulse()
+    }
+    
+    func pulse() {
         DispatchQueue.main.async {
-            self.pulsatingView.pulse()
+            let beat = Int(self.metronome.currentBeat)
+            self.pulsatingViewCollection.pulse(beat: beat)
         }
     }
     

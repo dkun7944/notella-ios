@@ -121,12 +121,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RD0-e3-tPQ" customClass="PulsatingView" customModule="Notella" customModuleProvider="target">
-                                <rect key="frame" x="182" y="328" width="10" height="10"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RD0-e3-tPQ" customClass="PulsatingViewCollection" customModule="Notella" customModuleProvider="target">
+                                <rect key="frame" x="87" y="308" width="200" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="10" id="dVs-ae-ECa"/>
-                                    <constraint firstAttribute="width" constant="10" id="hhR-4w-Ux5"/>
+                                    <constraint firstAttribute="height" constant="50" id="dVs-ae-ECa"/>
+                                    <constraint firstAttribute="width" constant="200" id="hhR-4w-Ux5"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1M-FJ-bhB">
@@ -151,7 +150,7 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="pulsatingView" destination="RD0-e3-tPQ" id="DYC-JK-w6L"/>
+                        <outlet property="pulsatingViewCollection" destination="RD0-e3-tPQ" id="sYq-UC-syO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u52-re-0e9" userLabel="First Responder" sceneMemberID="firstResponder"/>

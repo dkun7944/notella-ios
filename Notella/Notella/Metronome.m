@@ -148,7 +148,7 @@
                 _next_beat_frame = 800;
                 _next_sample_frame = 850;
                 _currentSubdivision = 0;
-                _currentBeat = 0;
+                _currentBeat = 3;
                 _cumulativeCurrentBeat = 0;
                 _oscillatorPosition = 0;
                 _oscillatorTime = 0;
@@ -332,7 +332,7 @@
     BOOL shouldMakeDownbeat = true;
     
     if ([timeSignature isEqualToString:@"1/4"] || [timeSignature isEqualToString:@"2/4"] || [timeSignature isEqualToString:@"3/4"] || [timeSignature isEqualToString:@"4/4"] || [timeSignature isEqualToString:@"3/8"] || [timeSignature isEqualToString:@"6/8"] || [timeSignature isEqualToString:@"9/8"] || [timeSignature isEqualToString:@"12/8"]) {
-        if (_currentBeat != 0) {
+        if (_currentBeat != 3) {
             shouldMakeDownbeat = false;
         }
     } else if ([timeSignature isEqualToString:@"2+2+1"]) {

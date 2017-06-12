@@ -44,6 +44,7 @@
 		4CFADD411EEDFDDC00EA8885 /* AEPlaythroughChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD261EEDFDDC00EA8885 /* AEPlaythroughChannel.m */; };
 		4CFADD421EEDFDDC00EA8885 /* AERecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD281EEDFDDC00EA8885 /* AERecorder.m */; };
 		4CFADD451EEDFDE200EA8885 /* Metronome.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD431EEDFDE200EA8885 /* Metronome.m */; };
+		4CFADD4D1EEE0AC700EA8885 /* PulsatingViewCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADD4C1EEE0AC700EA8885 /* PulsatingViewCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,7 @@
 		4CFADD431EEDFDE200EA8885 /* Metronome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Metronome.m; sourceTree = "<group>"; };
 		4CFADD441EEDFDE200EA8885 /* Metronome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Metronome.h; sourceTree = "<group>"; };
 		4CFADD4A1EEDFEB900EA8885 /* Notella-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Notella-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		4CFADD4C1EEE0AC700EA8885 /* PulsatingViewCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulsatingViewCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 		4CFADCF01EEDF9C900EA8885 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4CFADD4C1EEE0AC700EA8885 /* PulsatingViewCollection.swift */,
 				4CFADCF21EEDFA2C00EA8885 /* PulsatingView.swift */,
 				4CFADD441EEDFDE200EA8885 /* Metronome.h */,
 				4CFADD431EEDFDE200EA8885 /* Metronome.m */,
@@ -384,6 +387,7 @@
 				4CFADD331EEDFDDC00EA8885 /* AEAudioUnitFilter.m in Sources */,
 				4CFADD3D1EEDFDDC00EA8885 /* AEExpanderFilter.m in Sources */,
 				4CFADD3E1EEDFDDC00EA8885 /* AELimiter.m in Sources */,
+				4CFADD4D1EEE0AC700EA8885 /* PulsatingViewCollection.swift in Sources */,
 				4CFADD3F1EEDFDDC00EA8885 /* AELimiterFilter.m in Sources */,
 				4CFADD351EEDFDDC00EA8885 /* AEBlockChannel.m in Sources */,
 				4CFADCEE1EEDE69B00EA8885 /* Extensions.swift in Sources */,

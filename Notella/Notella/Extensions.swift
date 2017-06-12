@@ -6,10 +6,16 @@
 //  Copyright © 2017 Daniel Kuntz. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension Comparable {
     func clamped(to limits: ClosedRange<Self>) -> Self {
         return min(max(self, limits.lowerBound), limits.upperBound)
+    }
+}
+
+extension Int {
+    var cgFloat: CGFloat {
+        return CGFloat(self)
     }
 }

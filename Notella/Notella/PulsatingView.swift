@@ -10,7 +10,7 @@ import UIKit
 
 class PulsatingView: UIView {
     
-    // MARK: - Variables
+    // MARK: - Properties
     
     var color: CGColor = UIColor.notellaPurple.cgColor
     var circleLayer: CAShapeLayer = CAShapeLayer()
@@ -18,7 +18,7 @@ class PulsatingView: UIView {
     
     // MARK: - Setup
     
-    init(frame: CGRect, color: UIColor) {
+    init(frame: CGRect, color: UIColor = UIColor.notellaPurple) {
         self.color = color.cgColor
         super.init(frame: frame)
     }
@@ -27,7 +27,7 @@ class PulsatingView: UIView {
         super.init(coder: aDecoder)
     }
     
-    override func awakeFromNib() {
+    override func willMove(toSuperview newSuperview: UIView?) {
         self.circleLayer.path = UIBezierPath(ovalIn: self.bounds).cgPath
         self.circleLayer.fillColor = UIColor.lighterGray.cgColor
         self.layer.addSublayer(self.circleLayer)
@@ -60,29 +60,12 @@ class PulsatingView: UIView {
         
         let animationGroup = CAAnimationGroup()
         animationGroup.animations = [sizeStart, sizeEnd, opacityStart, opacityEnd]
-        animationGroup.duration = 1.0
+        animationGroup.duration = 0.8
         animationGroup.autoreverses = false
         
         newCircleLayer.opacity = 0.0
         newCircleLayer.add(animationGroup, forKey: nil)
         
         CATransaction.commit()
-        
-//        let widthStart = CABasicAnimation(keyPath: "lineWidth")
-//        widthStart.toValue = 2.0
-//        let widthEnd = CABasicAnimation(keyPath: "lineWidth")
-//        widthEnd.toValue = 20.0
-//        
-//        let width = CAAnimationGroup()
-//        width.animations = [widthStart, widthEnd]
-//        width.autoreverses = true
-//        
-//        if self.tempo < 180 {
-//            width.duration = 0.1
-//        } else {
-//            width.duration = 0.075
-//        }
-//        
-//        self.circleLayer.add(width, forKey: nil)
     }
 }
