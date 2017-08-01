@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C01CB741F30F275003E0FAE /* RandomMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01CB731F30F275003E0FAE /* RandomMusic.swift */; };
+		4C01CB781F30F285003E0FAE /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01CB751F30F285003E0FAE /* Pitch.swift */; };
+		4C01CB791F30F285003E0FAE /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01CB761F30F285003E0FAE /* Step.swift */; };
+		4C01CB7A1F30F285003E0FAE /* XmlGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01CB771F30F285003E0FAE /* XmlGenerator.swift */; };
 		4C74AC5B1EEDDF4600522A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74AC5A1EEDDF4600522A34 /* AppDelegate.swift */; };
 		4C74AC5D1EEDDF4600522A34 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74AC5C1EEDDF4600522A34 /* StartViewController.swift */; };
 		4C74AC601EEDDF4600522A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C74AC5E1EEDDF4600522A34 /* Main.storyboard */; };
@@ -126,6 +130,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C01CB731F30F275003E0FAE /* RandomMusic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomMusic.swift; sourceTree = "<group>"; };
+		4C01CB751F30F285003E0FAE /* Pitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pitch.swift; sourceTree = "<group>"; };
+		4C01CB761F30F285003E0FAE /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		4C01CB771F30F285003E0FAE /* XmlGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmlGenerator.swift; sourceTree = "<group>"; };
 		4C74AC571EEDDF4600522A34 /* Notella.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notella.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C74AC5A1EEDDF4600522A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C74AC5C1EEDDF4600522A34 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +220,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C01CB6C1F30F252003E0FAE /* Random Music */ = {
+			isa = PBXGroup;
+			children = (
+				4C01CB731F30F275003E0FAE /* RandomMusic.swift */,
+				4C01CB771F30F285003E0FAE /* XmlGenerator.swift */,
+				4C01CB751F30F285003E0FAE /* Pitch.swift */,
+				4C01CB761F30F285003E0FAE /* Step.swift */,
+			);
+			name = "Random Music";
+			sourceTree = "<group>";
+		};
 		4C74AC4E1EEDDF4600522A34 = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +257,7 @@
 				4CFADCF01EEDF9C900EA8885 /* Model */,
 				4CFADCEC1EEDE68600EA8885 /* Helpers */,
 				4C74AC6C1EEDDF9F00522A34 /* View Controllers */,
+				4C01CB6C1F30F252003E0FAE /* Random Music */,
 				4C74AC5E1EEDDF4600522A34 /* Main.storyboard */,
 				4C74AC721EEDE09100522A34 /* Resources */,
 				4C74AC631EEDDF4600522A34 /* LaunchScreen.storyboard */,
@@ -542,6 +562,7 @@
 				4CFADD361EEDFDDC00EA8885 /* AEBlockFilter.m in Sources */,
 				4CFADD401EEDFDDC00EA8885 /* AEMixerBuffer.m in Sources */,
 				4CFADD3C1EEDFDDC00EA8885 /* TPCircularBuffer.c in Sources */,
+				4C01CB741F30F275003E0FAE /* RandomMusic.swift in Sources */,
 				4CFADD411EEDFDDC00EA8885 /* AEPlaythroughChannel.m in Sources */,
 				4CFADD371EEDFDDC00EA8885 /* AEBlockScheduler.m in Sources */,
 				4CFADCF51EEDFA5400EA8885 /* UIColor+NotellaColors.swift in Sources */,
@@ -552,8 +573,10 @@
 				4CFADD331EEDFDDC00EA8885 /* AEAudioUnitFilter.m in Sources */,
 				4CFADD751EEEB6DD00EA8885 /* ScoreView.mm in Sources */,
 				4CFADD3D1EEDFDDC00EA8885 /* AEExpanderFilter.m in Sources */,
+				4C01CB781F30F285003E0FAE /* Pitch.swift in Sources */,
 				4CFADD3E1EEDFDDC00EA8885 /* AELimiter.m in Sources */,
 				4CFADD4D1EEE0AC700EA8885 /* PulsatingViewCollection.swift in Sources */,
+				4C01CB791F30F285003E0FAE /* Step.swift in Sources */,
 				4CFADD3F1EEDFDDC00EA8885 /* AELimiterFilter.m in Sources */,
 				4CFADD351EEDFDDC00EA8885 /* AEBlockChannel.m in Sources */,
 				4CFADCEE1EEDE69B00EA8885 /* Extensions.swift in Sources */,
@@ -561,6 +584,7 @@
 				4C74AC5D1EEDDF4600522A34 /* StartViewController.swift in Sources */,
 				4CFADD3A1EEDFDDC00EA8885 /* README.markdown in Sources */,
 				4CFADD311EEDFDDC00EA8885 /* AEAudioFileWriter.m in Sources */,
+				4C01CB7A1F30F285003E0FAE /* XmlGenerator.swift in Sources */,
 				4CFADD381EEDFDDC00EA8885 /* AEFloatConverter.m in Sources */,
 				4C74AC6F1EEDE01500522A34 /* StyledViewController.swift in Sources */,
 				4CFADD3B1EEDFDDC00EA8885 /* TPCircularBuffer+AudioBufferList.c in Sources */,

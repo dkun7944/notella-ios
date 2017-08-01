@@ -27,6 +27,9 @@ class StartViewController: StyledViewController {
     
     func setup() {
         measureLabel.text = "\(numMeasures)"
+        
+        let system = RandomMusic.generate()
+        print(system)
     }
 
     // MARK: - Actions

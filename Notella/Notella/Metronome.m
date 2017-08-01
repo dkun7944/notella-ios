@@ -170,6 +170,12 @@
                 _next_sample_frame += frames_between_beats / _samplesInQuarter;
             }
             
+            if (_next_beat_frame == _total_frames + 1000) {
+                if (!self.blockChannel.channelIsMuted) {
+                    [self.delegate pulseDownbeat];
+                }
+            }
+            
             // Set a flag that triggers code below to start a beat
             if (_next_beat_frame == _total_frames) {
                 if (_beatsPerMeasure == 1) { // If time signature is 1/4
@@ -177,9 +183,9 @@
                         _making_beat = YES;
                         _making_subdivision = NO;
                         
-                        if (!self.blockChannel.channelIsMuted) {
-                            [self.delegate pulseDownbeat];
-                        }
+//                        if (!self.blockChannel.channelIsMuted) {
+//                            [self.delegate pulseDownbeat];
+//                        }
                         
                     } else {
                         _making_beat = NO;
@@ -190,15 +196,15 @@
                         if ([self shouldMakeDownbeat]) {
                             _making_beat = YES;
                             _making_subdivision = NO;
-                            if (!self.blockChannel.channelIsMuted) {
-                                [self.delegate pulseDownbeat];
-                            }
+//                            if (!self.blockChannel.channelIsMuted) {
+//                                [self.delegate pulseDownbeat];
+//                            }
                         } else {
                             _making_beat = NO;
                             _making_subdivision = YES;
-                            if (!self.blockChannel.channelIsMuted) {
-                                [self.delegate pulseUpbeat];
-                            }
+//                            if (!self.blockChannel.channelIsMuted) {
+//                                [self.delegate pulseUpbeat];
+//                            }
                         }
                         
                         _currentBeat ++;

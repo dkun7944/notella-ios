@@ -50,7 +50,7 @@ class PulsatingView: UIView {
         sizeStart.toValue = newCircleLayer.path
         let sizeEnd = CABasicAnimation(keyPath: "path")
         
-        let inset = -bounds.width
+        let inset = -bounds.width * 0.5
         sizeEnd.toValue = UIBezierPath(ovalIn: bounds.insetBy(dx: inset, dy: inset)).cgPath
         
         let opacityStart = CABasicAnimation(keyPath: "opacity")
@@ -60,8 +60,9 @@ class PulsatingView: UIView {
         
         let animationGroup = CAAnimationGroup()
         animationGroup.animations = [sizeStart, sizeEnd, opacityStart, opacityEnd]
-        animationGroup.duration = 0.8
+        animationGroup.duration = 0.3
         animationGroup.autoreverses = false
+        animationGroup.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
         
         newCircleLayer.opacity = 0.0
         newCircleLayer.add(animationGroup, forKey: nil)
