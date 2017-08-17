@@ -97,25 +97,10 @@ class XmlGenerator {
         return xml
     }
     
-    static func beatsInMeasures(for time: String) -> Int {
-        switch time {
-        case "common_time", "time_four", "time_four_four":
-            return 4
-        case "cut_time", "time_two", "time_two_four":
-            return 2
-        case "time_six_eight":
-            return 8
-        case "time_three", "time_three_four":
-            return 3
-        default:
-            return 4
-        }
-    }
-    
     static func systemToMusicXML(_ system: ScoreSystem) -> String {
         var xml: String = ""
         
-        let beatsInMeasure: Float = beatsInMeasures(for: system.time).float
+        let beatsInMeasure: Float = Float(String(system.time.characters.first!))!
         var firstNote: Bool = true
         var firstNoteInMeasure: Bool = true
         var cumDuration: Float = 0
@@ -241,7 +226,7 @@ class XmlGenerator {
         xml += openNewline("score-partwise")
         
         xml += openNewline("part-list")
-        xml += "<score-part id=\"P1\">\n" + close("score-part")
+        xml += "<score-part id=\"P1\">\n" + open("part-name") + "Piano" + close("part-name") + close("score-part")
         xml += close("part-list")
         
         xml += "<part id=\"P1\">\n"

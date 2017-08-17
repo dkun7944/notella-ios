@@ -39,7 +39,7 @@ class Pitch: Comparable {
     }
     
     init(midiNoteNumber: Int) {
-        self.step = Step(rawValue: midiNoteNumber % 12)!
+        self.step = Step.all[midiNoteNumber % 12]
         self.octave = (midiNoteNumber / 12)
     }
     
@@ -100,7 +100,7 @@ class Pitch: Comparable {
      */
     var midiNoteNumber: UInt8 {
         if let index = Step.all.index(of: step) {
-            return UInt8(index + (octave + 1) * 12)
+            return UInt8(index + octave * 12)
         }
         
         return 12

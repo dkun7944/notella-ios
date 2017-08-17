@@ -29,6 +29,8 @@ class StartViewController: StyledViewController {
         measureLabel.text = "\(numMeasures)"
         
         let system = RandomMusic.generate()
+        let xml = XmlGenerator.toMusicXML(system)
+        print(xml)
         print(system)
     }
 

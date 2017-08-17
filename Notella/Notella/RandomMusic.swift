@@ -63,42 +63,55 @@ class RandomMusic {
     static var numerator = 3
     static var denominator = 4
     static var octaves = 2
-    static var key = 3
+    static var key = 0
+    static var maxLeap = 6
+    
+    static var keyo = [ 0, 7, 2, 4 ]
     
     static func generate() -> ScoreSystem {
-        let realMeasures = ceil(Double(measures * denominator / numerator))
-        let numNotes = realMeasures * 4 //number of 1/4th notes
+        let durations: [Float] = [0.25, 0.5, 0.75, 1.0, 1.5, 2.0, 3.0, 4.0]
+        let maxOctave = 52 + octaves * 12 + keyo[key]
         var notes: [ScoreNote] = []
+        var prevMidiNote: Int = 0
         
-        [0..<numNotes].forEach { _ in
-            if drand48() < 0.5 {
-                notes.append(randomNote(duration: 2))
-                notes.append(randomNote(duration: 2))
-            } else {
-                notes.append(randomNote(duration: 4))
+        for _ in 0..<measures {
+            var remaining: Float = numerator.float
+            while remaining > 0 {
+                let tmpDurations = durations.filter { $0 <= remaining }
+                let duration = tmpDurations.randomItem()
+                remaining -= duration
+                
+                var pitch: Pitch
+                if prevMidiNote == 0 {
+                    pitch = randomPitch(range: 0...127)
+                } else {
+                    pitch = randomPitch(range: prevMidiNote-maxLeap...min(prevMidiNote+maxLeap, maxOctave))
+                }
+                prevMidiNote = Int(pitch.midiNoteNumber)
+                
+                let note = pitchToScoreNote(pitch, duration: duration)
+                notes.append(note)
             }
         }
-        
+
         let time: String = "\(numerator)\(denominator)"
         let system = ScoreSystem(clef: "g_clef", time: time, notes: notes)
         return system
     }
     
-    static func randomNote(duration: Float) -> ScoreNote {
-        let pitch = randomPitch()
+    static func pitchToScoreNote(_ pitch: Pitch, duration: Float) -> ScoreNote {
         let step = pitch.step.withoutAccidental().description
         let accidental = pitch.step.accidental()
         return ScoreNote(step: step, accidental: accidental, octave: pitch.octave, duration: duration)
     }
     
-    static func randomPitch() -> Pitch {
+    static func randomPitch(range: CountableClosedRange<Int>) -> Pitch {
         var cdur = [ 0, 2, 4, 5, 7, 9, 11 ]
-        //           c  g  d  e
-        var keyo = [ 0, 7, 2, 4 ]
-        
-        let idx    = Int(arc4random_uniform(6))
-        let octave = Int(arc4random_uniform(2))
-        let midiNote  = (cdur[idx] + octave * 12 + 60) + keyo[key]
+
+        var midiNote = -1
+        while !range.contains(midiNote) {
+            midiNote = (cdur.randomItem() + randInRange(0...2) * 12 + 52) + keyo[key]
+        }
         
         return Pitch(midiNoteNumber: midiNote)
     }
